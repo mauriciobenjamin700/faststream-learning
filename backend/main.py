@@ -1,6 +1,4 @@
-def main():
-    print("Hello from faststream-learning!")
+from src import run_server
 
 
-if __name__ == "__main__":
-    main()
+run_server()

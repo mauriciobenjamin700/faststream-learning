@@ -18,7 +18,7 @@ class Settings(BaseSettings):
     DB_URL: str = "sqlite+aiosqlite:///./test.db"
     DB_ECHO: bool = False
 
-    BROKER_URL: str = "amqp://guest:guest@localhost:5672//"
+    BROKER_URL: str = "amqp://guest:guest@localhost:5672/"
 
 
 settings = Settings()
