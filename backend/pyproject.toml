@@ -35,6 +35,9 @@ select = [
     "I",    # isort (ordem de imports)
     "Q",    # flake8-quotes (aspas)
 ]
+ignore = [
+    "F403",  # from module import * (usado em __init__.py)
+]
 
 [tool.ruff.lint.flake8-quotes]
 inline-quotes = "double"

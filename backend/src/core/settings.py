@@ -6,7 +6,8 @@ class Settings(BaseSettings):
         env_file=".env",
         env_file_encoding="utf-8",
         str_strip_whitespace=True,
-        case_sensitive=True
+        case_sensitive=True,
+        extra="ignore",
     )
 
     # Application
@@ -19,3 +20,5 @@ class Settings(BaseSettings):
 
     BROKER_URL: str = "amqp://guest:guest@localhost:5672//"
 
+
+settings = Settings()
