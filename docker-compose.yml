@@ -1,0 +1,15 @@
+services:
+  queue:
+    build: ./queue
+    container_name: faststream_queue
+    restart: unless-stopped
+    ports:
+      - "5672:5672"
+      - "15672:15672"
+    env_file:
+      - .env
+    volumes:
+      - rabbitmq_data:/var/lib/rabbitmq
+
+volumes:
+  rabbitmq_data:
